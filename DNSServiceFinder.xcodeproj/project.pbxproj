@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -17,6 +17,9 @@
 		9F17EA3328F2F80A00E3D620 /* DNSServiceFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3228F2F80A00E3D620 /* DNSServiceFinderTests.swift */; };
 		9F17EA3D28F2F80A00E3D620 /* DNSServiceFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3C28F2F80A00E3D620 /* DNSServiceFinderUITests.swift */; };
 		9F17EA3F28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3E28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift */; };
+		B5B8DED2CFA0AABA28C2172A /* Pods_DNSServiceFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788C63AB8B41CF17801047D0 /* Pods_DNSServiceFinder.framework */; };
+		CC1F2EE70EA0CB2BDD1B6A5E /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDF21C8FE94A7090B86EB0F /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework */; };
+		E6F2632E8ADF8732A7082440 /* Pods_DNSServiceFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548B9496341AA8EAB7B782DC /* Pods_DNSServiceFinderTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +40,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		16FB1E7F2A2A3E2CF0658DE5 /* Pods-DNSServiceFinderTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinderTests.debug.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinderTests/Pods-DNSServiceFinderTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1D673FF04C3275CDD74FF5F0 /* Pods-DNSServiceFinder.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder.release.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder/Pods-DNSServiceFinder.release.xcconfig"; sourceTree = "<group>"; };
+		548B9496341AA8EAB7B782DC /* Pods_DNSServiceFinderTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNSServiceFinderTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		711EA25F2B5992EF56CF3AE1 /* Pods-DNSServiceFinder-DNSServiceFinderUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder-DNSServiceFinderUITests.debug.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder-DNSServiceFinderUITests/Pods-DNSServiceFinder-DNSServiceFinderUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		788C63AB8B41CF17801047D0 /* Pods_DNSServiceFinder.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNSServiceFinder.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7A8824AD94922C700E562887 /* Pods-DNSServiceFinderTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinderTests.release.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinderTests/Pods-DNSServiceFinderTests.release.xcconfig"; sourceTree = "<group>"; };
 		9F17EA1528F2F80800E3D620 /* DNSServiceFinder.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DNSServiceFinder.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F17EA1828F2F80800E3D620 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9F17EA1A28F2F80800E3D620 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -51,6 +60,9 @@
 		9F17EA3828F2F80A00E3D620 /* DNSServiceFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNSServiceFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F17EA3C28F2F80A00E3D620 /* DNSServiceFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServiceFinderUITests.swift; sourceTree = "<group>"; };
 		9F17EA3E28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServiceFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		AD5CB36F9A5E05A9AC0ABC5B /* Pods-DNSServiceFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder.debug.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder/Pods-DNSServiceFinder.debug.xcconfig"; sourceTree = "<group>"; };
+		BDDF21C8FE94A7090B86EB0F /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNSServiceFinder_DNSServiceFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E50E1E47C1EB97AD1D38E76B /* Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder-DNSServiceFinderUITests/Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B5B8DED2CFA0AABA28C2172A /* Pods_DNSServiceFinder.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E6F2632E8ADF8732A7082440 /* Pods_DNSServiceFinderTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -72,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC1F2EE70EA0CB2BDD1B6A5E /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +100,8 @@
 				9F17EA3128F2F80A00E3D620 /* DNSServiceFinderTests */,
 				9F17EA3B28F2F80A00E3D620 /* DNSServiceFinderUITests */,
 				9F17EA1628F2F80800E3D620 /* Products */,
+				FC181C45C90157F871028FF5 /* Pods */,
+				D8DE0B4718CFEDB8F221F13B /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -130,6 +147,30 @@
 			path = DNSServiceFinderUITests;
 			sourceTree = "<group>";
 		};
+		D8DE0B4718CFEDB8F221F13B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				788C63AB8B41CF17801047D0 /* Pods_DNSServiceFinder.framework */,
+				BDDF21C8FE94A7090B86EB0F /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework */,
+				548B9496341AA8EAB7B782DC /* Pods_DNSServiceFinderTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		FC181C45C90157F871028FF5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				AD5CB36F9A5E05A9AC0ABC5B /* Pods-DNSServiceFinder.debug.xcconfig */,
+				1D673FF04C3275CDD74FF5F0 /* Pods-DNSServiceFinder.release.xcconfig */,
+				711EA25F2B5992EF56CF3AE1 /* Pods-DNSServiceFinder-DNSServiceFinderUITests.debug.xcconfig */,
+				E50E1E47C1EB97AD1D38E76B /* Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig */,
+				16FB1E7F2A2A3E2CF0658DE5 /* Pods-DNSServiceFinderTests.debug.xcconfig */,
+				7A8824AD94922C700E562887 /* Pods-DNSServiceFinderTests.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +178,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F17EA4228F2F80A00E3D620 /* Build configuration list for PBXNativeTarget "DNSServiceFinder" */;
 			buildPhases = (
+				8D7D4C59A0684AF472430A35 /* [CP] Check Pods Manifest.lock */,
 				9F17EA1128F2F80800E3D620 /* Sources */,
 				9F17EA1228F2F80800E3D620 /* Frameworks */,
 				9F17EA1328F2F80800E3D620 /* Resources */,
@@ -154,6 +196,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F17EA4528F2F80A00E3D620 /* Build configuration list for PBXNativeTarget "DNSServiceFinderTests" */;
 			buildPhases = (
+				2629DB13C513D68F9C3F52BC /* [CP] Check Pods Manifest.lock */,
 				9F17EA2A28F2F80900E3D620 /* Sources */,
 				9F17EA2B28F2F80900E3D620 /* Frameworks */,
 				9F17EA2C28F2F80900E3D620 /* Resources */,
@@ -172,6 +215,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9F17EA4828F2F80A00E3D620 /* Build configuration list for PBXNativeTarget "DNSServiceFinderUITests" */;
 			buildPhases = (
+				BFAA4A26C7FB5BED82BE1550 /* [CP] Check Pods Manifest.lock */,
 				9F17EA3428F2F80A00E3D620 /* Sources */,
 				9F17EA3528F2F80A00E3D620 /* Frameworks */,
 				9F17EA3628F2F80A00E3D620 /* Resources */,
@@ -210,7 +254,7 @@
 				};
 			};
 			buildConfigurationList = 9F17EA1028F2F80800E3D620 /* Build configuration list for PBXProject "DNSServiceFinder" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -255,6 +299,75 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2629DB13C513D68F9C3F52BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNSServiceFinderTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8D7D4C59A0684AF472430A35 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNSServiceFinder-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BFAA4A26C7FB5BED82BE1550 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-DNSServiceFinder-DNSServiceFinderUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		9F17EA1128F2F80800E3D620 /* Sources */ = {
@@ -436,6 +549,7 @@
 		};
 		9F17EA4328F2F80A00E3D620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = AD5CB36F9A5E05A9AC0ABC5B /* Pods-DNSServiceFinder.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -464,6 +578,7 @@
 		};
 		9F17EA4428F2F80A00E3D620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1D673FF04C3275CDD74FF5F0 /* Pods-DNSServiceFinder.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -492,6 +607,7 @@
 		};
 		9F17EA4628F2F80A00E3D620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 16FB1E7F2A2A3E2CF0658DE5 /* Pods-DNSServiceFinderTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -512,6 +628,7 @@
 		};
 		9F17EA4728F2F80A00E3D620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7A8824AD94922C700E562887 /* Pods-DNSServiceFinderTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -532,6 +649,7 @@
 		};
 		9F17EA4928F2F80A00E3D620 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 711EA25F2B5992EF56CF3AE1 /* Pods-DNSServiceFinder-DNSServiceFinderUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -550,6 +668,7 @@
 		};
 		9F17EA4A28F2F80A00E3D620 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E50E1E47C1EB97AD1D38E76B /* Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
