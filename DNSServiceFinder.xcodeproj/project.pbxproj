@@ -167,7 +167,6 @@
 				16FB1E7F2A2A3E2CF0658DE5 /* Pods-DNSServiceFinderTests.debug.xcconfig */,
 				7A8824AD94922C700E562887 /* Pods-DNSServiceFinderTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
