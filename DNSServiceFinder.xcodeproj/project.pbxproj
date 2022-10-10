@@ -20,6 +20,7 @@
 		9FA3208928F3042B0098B886 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3208828F3042B0098B886 /* PublishViewController.swift */; };
 		9FA3208B28F304420098B886 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3208A28F304420098B886 /* ScanViewController.swift */; };
 		9FA8795A28F30C5F000E6265 /* ScanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */; };
+		9FFA8FA028F31303000BADF3 /* KeyConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FFA8F9F28F31303000BADF3 /* KeyConstant.swift */; };
 		B5B8DED2CFA0AABA28C2172A /* Pods_DNSServiceFinder.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 788C63AB8B41CF17801047D0 /* Pods_DNSServiceFinder.framework */; };
 		CC1F2EE70EA0CB2BDD1B6A5E /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BDDF21C8FE94A7090B86EB0F /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework */; };
 		E6F2632E8ADF8732A7082440 /* Pods_DNSServiceFinderTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 548B9496341AA8EAB7B782DC /* Pods_DNSServiceFinderTests.framework */; };
@@ -66,6 +67,7 @@
 		9FA3208828F3042B0098B886 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		9FA3208A28F304420098B886 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewCell.swift; sourceTree = "<group>"; };
+		9FFA8F9F28F31303000BADF3 /* KeyConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyConstant.swift; sourceTree = "<group>"; };
 		AD5CB36F9A5E05A9AC0ABC5B /* Pods-DNSServiceFinder.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder.debug.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder/Pods-DNSServiceFinder.debug.xcconfig"; sourceTree = "<group>"; };
 		BDDF21C8FE94A7090B86EB0F /* Pods_DNSServiceFinder_DNSServiceFinderUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_DNSServiceFinder_DNSServiceFinderUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E50E1E47C1EB97AD1D38E76B /* Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig"; path = "Target Support Files/Pods-DNSServiceFinder-DNSServiceFinderUITests/Pods-DNSServiceFinder-DNSServiceFinderUITests.release.xcconfig"; sourceTree = "<group>"; };
@@ -124,17 +126,15 @@
 		9F17EA1728F2F80800E3D620 /* DNSServiceFinder */ = {
 			isa = PBXGroup;
 			children = (
+				9FFA8F9E28F312DB000BADF3 /* Constants */,
 				9F17EA1828F2F80800E3D620 /* AppDelegate.swift */,
 				9F17EA1A28F2F80800E3D620 /* SceneDelegate.swift */,
-				9F17EA1C28F2F80800E3D620 /* ViewController.swift */,
 				9F17EA1E28F2F80800E3D620 /* Main.storyboard */,
 				9F17EA2428F2F80900E3D620 /* Assets.xcassets */,
 				9F17EA2628F2F80900E3D620 /* LaunchScreen.storyboard */,
 				9F17EA2928F2F80900E3D620 /* Info.plist */,
-				9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */,
-				9FA3208828F3042B0098B886 /* PublishViewController.swift */,
+				9FA8795B28F30D03000E6265 /* ContainerView */,
 				9F17EA2128F2F80800E3D620 /* DNSServiceFinder.xcdatamodeld */,
-				9FA3208A28F304420098B886 /* ScanViewController.swift */,
 			);
 			path = DNSServiceFinder;
 			sourceTree = "<group>";
@@ -154,6 +154,41 @@
 				9F17EA3E28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift */,
 			);
 			path = DNSServiceFinderUITests;
+			sourceTree = "<group>";
+		};
+		9F419FD628F48B2000469336 /* PublisherChildView */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3208828F3042B0098B886 /* PublishViewController.swift */,
+			);
+			path = PublisherChildView;
+			sourceTree = "<group>";
+		};
+		9F419FD728F48B3900469336 /* ScannerChildView */ = {
+			isa = PBXGroup;
+			children = (
+				9FA3208A28F304420098B886 /* ScanViewController.swift */,
+				9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */,
+			);
+			path = ScannerChildView;
+			sourceTree = "<group>";
+		};
+		9FA8795B28F30D03000E6265 /* ContainerView */ = {
+			isa = PBXGroup;
+			children = (
+				9F17EA1C28F2F80800E3D620 /* ViewController.swift */,
+				9F419FD728F48B3900469336 /* ScannerChildView */,
+				9F419FD628F48B2000469336 /* PublisherChildView */,
+			);
+			path = ContainerView;
+			sourceTree = "<group>";
+		};
+		9FFA8F9E28F312DB000BADF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				9FFA8F9F28F31303000BADF3 /* KeyConstant.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 		D8DE0B4718CFEDB8F221F13B /* Frameworks */ = {
@@ -388,6 +423,7 @@
 				9F17EA1B28F2F80800E3D620 /* SceneDelegate.swift in Sources */,
 				9F17EA2328F2F80800E3D620 /* DNSServiceFinder.xcdatamodeld in Sources */,
 				9FA8795A28F30C5F000E6265 /* ScanTableViewCell.swift in Sources */,
+				9FFA8FA028F31303000BADF3 /* KeyConstant.swift in Sources */,
 				9FA3208B28F304420098B886 /* ScanViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

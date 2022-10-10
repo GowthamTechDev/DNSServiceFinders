@@ -8,7 +8,10 @@
 import UIKit
 
 class ScanTableViewCell: UITableViewCell {
-
+    
+    @IBOutlet weak var scanLabelFirst: UILabel!
+    @IBOutlet weak var scanLabelSecond: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

@@ -27,7 +27,7 @@
                                                 <color key="backgroundColor" systemColor="systemBrownColor"/>
                                                 <color key="tintColor" systemColor="labelColor"/>
                                                 <state key="normal" title="Button"/>
-                                                <buttonConfiguration key="configuration" style="plain" title="Publsih"/>
+                                                <buttonConfiguration key="configuration" style="plain" title="Publish"/>
                                                 <connections>
                                                     <action selector="publishNetworks:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BTA-gY-bXN"/>
                                                 </connections>
@@ -134,6 +134,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="HNM-Pv-Q6Q" secondAttribute="trailing" constant="20" id="srt-vg-IUZ"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="scanLabelFirst" destination="dTT-Cm-V5V" id="gbi-px-X7U"/>
+                                            <outlet property="scanLabelSecond" destination="kSJ-QI-Kdn" id="H4m-Dg-CZw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
