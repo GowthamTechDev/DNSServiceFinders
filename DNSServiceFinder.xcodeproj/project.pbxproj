@@ -17,6 +17,7 @@
 		9F17EA3328F2F80A00E3D620 /* DNSServiceFinderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3228F2F80A00E3D620 /* DNSServiceFinderTests.swift */; };
 		9F17EA3D28F2F80A00E3D620 /* DNSServiceFinderUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3C28F2F80A00E3D620 /* DNSServiceFinderUITests.swift */; };
 		9F17EA3F28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F17EA3E28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift */; };
+		9F38507128F5C0B300A0536F /* ServiceProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9F38507028F5C0B300A0536F /* ServiceProvider.swift */; };
 		9FA3208928F3042B0098B886 /* PublishViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3208828F3042B0098B886 /* PublishViewController.swift */; };
 		9FA3208B28F304420098B886 /* ScanViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA3208A28F304420098B886 /* ScanViewController.swift */; };
 		9FA8795A28F30C5F000E6265 /* ScanTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */; };
@@ -64,6 +65,7 @@
 		9F17EA3828F2F80A00E3D620 /* DNSServiceFinderUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DNSServiceFinderUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9F17EA3C28F2F80A00E3D620 /* DNSServiceFinderUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServiceFinderUITests.swift; sourceTree = "<group>"; };
 		9F17EA3E28F2F80A00E3D620 /* DNSServiceFinderUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DNSServiceFinderUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		9F38507028F5C0B300A0536F /* ServiceProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceProvider.swift; sourceTree = "<group>"; };
 		9FA3208828F3042B0098B886 /* PublishViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublishViewController.swift; sourceTree = "<group>"; };
 		9FA3208A28F304420098B886 /* ScanViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanViewController.swift; sourceTree = "<group>"; };
 		9FA8795928F30C5F000E6265 /* ScanTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanTableViewCell.swift; sourceTree = "<group>"; };
@@ -127,13 +129,13 @@
 			isa = PBXGroup;
 			children = (
 				9FFA8F9E28F312DB000BADF3 /* Constants */,
+				9FA8795B28F30D03000E6265 /* ContainerView */,
 				9F17EA1828F2F80800E3D620 /* AppDelegate.swift */,
 				9F17EA1A28F2F80800E3D620 /* SceneDelegate.swift */,
 				9F17EA1E28F2F80800E3D620 /* Main.storyboard */,
 				9F17EA2428F2F80900E3D620 /* Assets.xcassets */,
 				9F17EA2628F2F80900E3D620 /* LaunchScreen.storyboard */,
 				9F17EA2928F2F80900E3D620 /* Info.plist */,
-				9FA8795B28F30D03000E6265 /* ContainerView */,
 				9F17EA2128F2F80800E3D620 /* DNSServiceFinder.xcdatamodeld */,
 			);
 			path = DNSServiceFinder;
@@ -179,6 +181,7 @@
 				9F17EA1C28F2F80800E3D620 /* ViewController.swift */,
 				9F419FD728F48B3900469336 /* ScannerChildView */,
 				9F419FD628F48B2000469336 /* PublisherChildView */,
+				9F38507028F5C0B300A0536F /* ServiceProvider.swift */,
 			);
 			path = ContainerView;
 			sourceTree = "<group>";
@@ -420,6 +423,7 @@
 				9FA3208928F3042B0098B886 /* PublishViewController.swift in Sources */,
 				9F17EA1D28F2F80800E3D620 /* ViewController.swift in Sources */,
 				9F17EA1928F2F80800E3D620 /* AppDelegate.swift in Sources */,
+				9F38507128F5C0B300A0536F /* ServiceProvider.swift in Sources */,
 				9F17EA1B28F2F80800E3D620 /* SceneDelegate.swift in Sources */,
 				9F17EA2328F2F80800E3D620 /* DNSServiceFinder.xcdatamodeld in Sources */,
 				9FA8795A28F30C5F000E6265 /* ScanTableViewCell.swift in Sources */,

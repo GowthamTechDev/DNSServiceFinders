@@ -7,20 +7,17 @@
 
 import UIKit
 
-class PublishViewController: UIViewController {
+final class PublishViewController: UIViewController {
     
     @IBOutlet weak var statusLbl: UILabel!
+    let fetchService = ServiceProvider()
     
     //MARK: -ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         ViewController.publishScanProtocol = self
-        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        
+        ServiceProvider.servicePublished = self
+        self.statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
     }
     
 }
@@ -28,11 +25,18 @@ class PublishViewController: UIViewController {
 extension PublishViewController:PublishScanProtocol{
     
     func scanBtnClicked() {
-        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText
-    }
-    
-    func publishBtnClicked() {
         statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
     }
     
+    func publishBtnClicked() {
+        ServiceProvider.sharedInstance.scanForNetworks()
+    }
+    
+}
+
+extension PublishViewController:ServicePublished{
+    func servicePublished() {
+        ServiceProvider.sharedInstance.stopServiceScan()
+        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText
+    }
 }
