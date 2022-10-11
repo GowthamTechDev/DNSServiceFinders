@@ -11,14 +11,36 @@ final class PublishViewController: UIViewController {
     
     @IBOutlet weak var statusLbl: UILabel!
     
-    //MARK: -ViewController Methods
+    //MARK: - ViewController Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        ServiceProvider.sharedInstance.stopServiceScan()
+        setDelegate()
+        UISetup()
+        addObservers()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("NotificationPost"), object: nil)
+    }
+    
+    //MARK: -UI Methods
+    
+    func setDelegate(){
         ViewController.publishScanProtocol = self
+    }
+    
+    func UISetup(){
         self.statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
+    }
+    
+    func addObservers(){
         NotificationCenter.default.addObserver(self, selector: #selector(servicePublished), name: Notification.Name("NotificationPost"), object: nil)
     }
     
+    //MARK: - Notification Methods Handler
+
     @objc func servicePublished(){
         ServiceProvider.sharedInstance.stopServiceScan()
         statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText

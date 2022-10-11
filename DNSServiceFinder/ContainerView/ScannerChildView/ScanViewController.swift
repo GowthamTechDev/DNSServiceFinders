@@ -11,7 +11,7 @@ class ScanViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    //MARK: -ViewController Methods
+    //MARK: - ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(servicePublished), name: Notification.Name("NotificationPost"), object: nil)
@@ -21,6 +21,8 @@ class ScanViewController: UIViewController {
         NotificationCenter.default.removeObserver(self, name: Notification.Name("NotificationPost"), object: nil)
     }
     
+    //MARK: - Notification Methods Handler
+
     @objc func servicePublished(){
         tableView.reloadData()
     }

@@ -10,7 +10,7 @@ import Foundation
 class ServiceProvider:NSObject{
     
     static var sharedInstance = ServiceProvider()
-    var netService: NetService!
+    var netService: NetService?
     var services = [NetService]()
     
     override init() {
@@ -20,12 +20,12 @@ class ServiceProvider:NSObject{
     func scanForNetworks(uuid:String){
         let dnsDomain = KeyConstant.MDNSModelKeyConstant.self
         netService = NetService(domain: dnsDomain.domainName, type: dnsDomain.serviceType, name: uuid, port: dnsDomain.port)
-        netService.delegate = self
-        netService.publish(options: [.listenForConnections])
+        netService?.delegate = self
+        netService?.publish(options: [.listenForConnections])
     }
     
     func stopServiceScan(){
-        netService.stop()
+        netService?.stop()
         netService = nil
     }
     
@@ -34,8 +34,22 @@ class ServiceProvider:NSObject{
 extension ServiceProvider:NetServiceDelegate{
     
     func netServiceWillPublish(_ sender: NetService) {
-        ServiceProvider.sharedInstance.services.append(sender)
+        handleDuplicateElements(service: sender)
         NotificationCenter.default.post(name: Notification.Name("NotificationPost"), object: nil)
+    }
+    
+    func handleDuplicateElements(service:NetService){
+        if ServiceProvider.sharedInstance.services.isEmpty{
+            ServiceProvider.sharedInstance.services.append(service)
+        }else{
+            for service in ServiceProvider.sharedInstance.services{
+                if service == service{
+                    print("Service already exist")
+                }else{
+                    ServiceProvider.sharedInstance.services.append(service)
+                }
+            }
+        }
     }
     
     /*UnComment Delegate Methods If required

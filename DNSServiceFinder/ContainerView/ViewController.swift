@@ -19,10 +19,14 @@ class ViewController: UIViewController {
     @IBOutlet weak var scannerContanierView: UIView!
     @IBOutlet weak var publishContainerView: UIView!
     
+    //MARK: - ViewController Methods
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
+
+    //MARK: - UserInteraction Methods
 
     @IBAction func publishNetworks(_ sender: Any) {
         ViewController.publishScanProtocol?.publishBtnClicked()
