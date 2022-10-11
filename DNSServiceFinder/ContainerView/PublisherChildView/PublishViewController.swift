@@ -15,8 +15,13 @@ final class PublishViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         ViewController.publishScanProtocol = self
-        ServiceProvider.servicePublished = self
         self.statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
+        NotificationCenter.default.addObserver(self, selector: #selector(servicePublished), name: Notification.Name("NotificationPost"), object: nil)
+    }
+    
+    @objc func servicePublished(){
+        ServiceProvider.sharedInstance.stopServiceScan()
+        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText
     }
     
 }
@@ -33,9 +38,3 @@ extension PublishViewController:PublishScanProtocol{
     
 }
 
-extension PublishViewController:ServicePublished{
-    func servicePublished() {
-        ServiceProvider.sharedInstance.stopServiceScan()
-        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText
-    }
-}

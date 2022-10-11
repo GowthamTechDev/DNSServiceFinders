@@ -12,7 +12,13 @@ class ScanViewController: UIViewController {
     //MARK: -ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
+        NotificationCenter.default.addObserver(self, selector: #selector(servicePublished), name: Notification.Name("NotificationPost"), object: nil)
     }
+    
+    @objc func servicePublished(){
+       
+    }
+
     
 }
 

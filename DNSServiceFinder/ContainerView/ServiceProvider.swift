@@ -7,16 +7,11 @@
 
 import Foundation
 
-protocol ServicePublished{
-    func servicePublished()
-}
-
 class ServiceProvider:NSObject{
     
     static var sharedInstance = ServiceProvider()
     var netService: NetService!
     var services = [NetService]()
-    static var servicePublished:ServicePublished?
     
     override init() {
         super.init()
@@ -39,7 +34,7 @@ extension ServiceProvider:NetServiceDelegate{
     
     func netServiceWillPublish(_ sender: NetService) {
         ServiceProvider.sharedInstance.services.append(sender)
-        ServiceProvider.servicePublished?.servicePublished()
+        NotificationCenter.default.post(name: Notification.Name("NotificationPost"), object: nil)
     }
     
     /*UnComment Delegate Methods If required
