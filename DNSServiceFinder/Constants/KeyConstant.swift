@@ -8,10 +8,16 @@
 import Foundation
 
 struct KeyConstant{
-   
+    
     struct PublishViewControllerKeyConstants{
         static let publishLblText = "Click Publish and Click Scan!!"
         static let scanLblText    = "Click Scan Now!!!"
+    }
+    
+    struct MDNSModelKeyConstant{
+        static let domainName:String = "local."
+        static let serviceType:String = "_http._tcp."
+        static let port:Int32 = 80
     }
     
     struct ScanViewControllerKeyConstants{

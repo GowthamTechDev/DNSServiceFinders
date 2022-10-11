@@ -9,16 +9,21 @@ import UIKit
 
 class ScanViewController: UIViewController {
     
+    @IBOutlet weak var tableView: UITableView!
+    
     //MARK: -ViewController Methods
     override func viewDidLoad() {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(servicePublished), name: Notification.Name("NotificationPost"), object: nil)
     }
     
-    @objc func servicePublished(){
-       
+    override func viewWillDisappear(_ animated: Bool) {
+        NotificationCenter.default.removeObserver(self, name: Notification.Name("NotificationPost"), object: nil)
     }
-
+    
+    @objc func servicePublished(){
+        tableView.reloadData()
+    }
     
 }
 
@@ -29,10 +34,11 @@ extension ScanViewController:UITableViewDelegate,UITableViewDataSource{
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: KeyConstant.CellReuseIdentifiers.scanTableViewCellReuseIdentifier,for: indexPath) as? ScanTableViewCell else { return UITableViewCell()}
-        cell.scanLabelFirst.text  = ""
-        cell.scanLabelSecond.text = ""
+        
+        let currentService = ServiceProvider.sharedInstance.services[indexPath.row]
+        cell.scanLabelFirst.text  = "Service Name = \(currentService.name)"
+        cell.scanLabelSecond.text = "Service Type = \(currentService.type) PortNo = \(currentService.port) "
         return cell
     }
-    
     
 }

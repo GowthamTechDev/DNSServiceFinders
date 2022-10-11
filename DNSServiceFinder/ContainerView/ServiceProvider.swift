@@ -17,8 +17,9 @@ class ServiceProvider:NSObject{
         super.init()
     }
     
-    func scanForNetworks(){
-        netService = NetService(domain: "local.", type: "_http._tcp.", name: "My iPhone", port: 80)
+    func scanForNetworks(uuid:String){
+        let dnsDomain = KeyConstant.MDNSModelKeyConstant.self
+        netService = NetService(domain: dnsDomain.domainName, type: dnsDomain.serviceType, name: uuid, port: dnsDomain.port)
         netService.delegate = self
         netService.publish(options: [.listenForConnections])
     }
@@ -38,18 +39,18 @@ extension ServiceProvider:NetServiceDelegate{
     }
     
     /*UnComment Delegate Methods If required
-    
-    func netServiceDidResolveAddress(_ sender: NetService) {}
-    
-    func netServiceWillResolve(_ sender: NetService) { }
-    
-    func netServiceDidPublish(_ sender: NetService) {}
-    
-    func netService(_ sender: NetService, didNotPublish errorDict: [String : NSNumber]) {}
-    
-    func netService(_ sender: NetService, didAcceptConnectionWith inputStream: InputStream, outputStream: OutputStream) {}
-    
-    func netServiceDidStop(_ sender: NetService) {}
+     
+     func netServiceDidResolveAddress(_ sender: NetService) {}
+     
+     func netServiceWillResolve(_ sender: NetService) { }
+     
+     func netServiceDidPublish(_ sender: NetService) {}
+     
+     func netService(_ sender: NetService, didNotPublish errorDict: [String : NSNumber]) {}
+     
+     func netService(_ sender: NetService, didAcceptConnectionWith inputStream: InputStream, outputStream: OutputStream) {}
+     
+     func netServiceDidStop(_ sender: NetService) {}
      
      */
     

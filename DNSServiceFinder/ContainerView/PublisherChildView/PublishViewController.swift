@@ -33,7 +33,8 @@ extension PublishViewController:PublishScanProtocol{
     }
     
     func publishBtnClicked() {
-        ServiceProvider.sharedInstance.scanForNetworks()
+        let uuid = UIDevice.current.identifierForVendor?.uuidString ?? ""
+        ServiceProvider.sharedInstance.scanForNetworks(uuid: uuid)
     }
     
 }
