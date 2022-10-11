@@ -10,7 +10,6 @@ import UIKit
 final class PublishViewController: UIViewController {
     
     @IBOutlet weak var statusLbl: UILabel!
-    let fetchService = ServiceProvider()
     
     //MARK: -ViewController Methods
     override func viewDidLoad() {

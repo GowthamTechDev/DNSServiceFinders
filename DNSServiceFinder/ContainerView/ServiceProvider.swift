@@ -12,6 +12,7 @@ protocol ServicePublished{
 }
 
 class ServiceProvider:NSObject{
+    
     static var sharedInstance = ServiceProvider()
     var netService: NetService!
     var services = [NetService]()
@@ -37,8 +38,8 @@ class ServiceProvider:NSObject{
 extension ServiceProvider:NetServiceDelegate{
     
     func netServiceWillPublish(_ sender: NetService) {
-        ServiceProvider.servicePublished?.servicePublished()
         ServiceProvider.sharedInstance.services.append(sender)
+        ServiceProvider.servicePublished?.servicePublished()
     }
     
     /*UnComment Delegate Methods If required
