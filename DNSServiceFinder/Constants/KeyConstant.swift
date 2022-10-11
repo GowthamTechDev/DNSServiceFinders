@@ -10,8 +10,12 @@ import Foundation
 struct KeyConstant{
    
     struct PublishViewControllerKeyConstants{
-        static let publishLblText = "Click Publish and scan and network"
-        static let scanLblText    = "Scan Now"
+        static let publishLblText = "Click Publish and Click Scan!!"
+        static let scanLblText    = "Click Scan Now!!!"
+    }
+    
+    struct ScanViewControllerKeyConstants{
+        
     }
     
     struct CellIdentifiersName{

@@ -15,7 +15,7 @@ class PublishViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        ViewController.publishClicked = self
+        ViewController.publishScanProtocol = self
         statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
     }
     
@@ -25,7 +25,11 @@ class PublishViewController: UIViewController {
     
 }
 
-extension PublishViewController:PublishProtocolClicked{
+extension PublishViewController:PublishScanProtocol{
+    
+    func scanBtnClicked() {
+        statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.scanLblText
+    }
     
     func publishBtnClicked() {
         statusLbl.text = KeyConstant.PublishViewControllerKeyConstants.publishLblText
